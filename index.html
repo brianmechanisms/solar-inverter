@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Brian Onang’o">
+<meta name="dcterms.date" content="2023-02-15">
+<meta name="keywords" content="Affordable autonomous agricultural vehicles, Smart farming, Walking robots, Compound robots, Compound linear actuator">
+
+<title>Brian Mechanisms - Novel Long Range Compound Linear Motion Mechanisms For use in the Design of Affordable Agricultural Robots</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./assets/favicon-96x96.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Novel Long Range Compound Linear Motion Mechanisms For use in the Design of Affordable Agricultural Robots</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/brianmechanisms" title="Brian Mechanisms" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/brianmechanisms" title="Brian Mechanisms" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">Home</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction">Introduction</a></li>
+  <li><a href="#sec-design-aims" id="toc-sec-design-aims" class="nav-link" data-scroll-target="#sec-design-aims">Design Aims</a></li>
+  <li><a href="#sec-recirculating-legs" id="toc-sec-recirculating-legs" class="nav-link" data-scroll-target="#sec-recirculating-legs">A Recirculating Leg Mechanism using a Parallelogram Linkage</a>
+  <ul class="collapse">
+  <li><a href="#sec-recirculating-legs-1" id="toc-sec-recirculating-legs-1" class="nav-link" data-scroll-target="#sec-recirculating-legs-1">The First Configuration</a></li>
+  <li><a href="#sec-parallelogram-straight-line-motion" id="toc-sec-parallelogram-straight-line-motion" class="nav-link" data-scroll-target="#sec-parallelogram-straight-line-motion">Parallelgram Straight Line Motion</a></li>
+  <li><a href="#sec-recirculating-legs-2" id="toc-sec-recirculating-legs-2" class="nav-link" data-scroll-target="#sec-recirculating-legs-2">The Second Configuration</a></li>
+  <li><a href="#sec-recirculating-legs-hollow" id="toc-sec-recirculating-legs-hollow" class="nav-link" data-scroll-target="#sec-recirculating-legs-hollow">A Hollow Leg for a Recirculating Leg System</a></li>
+  </ul></li>
+  <li><a href="#sec-rimless-wheel" id="toc-sec-rimless-wheel" class="nav-link" data-scroll-target="#sec-rimless-wheel">Rimless Wheel with Constant Pressure Angle</a></li>
+  <li><a href="#sec-flexible-links" id="toc-sec-flexible-links" class="nav-link" data-scroll-target="#sec-flexible-links">Flexible Links and Cam Grooves</a></li>
+  <li><a href="#sec-universal-linear-motion-wheel" id="toc-sec-universal-linear-motion-wheel" class="nav-link" data-scroll-target="#sec-universal-linear-motion-wheel">Universal Linear Motion Wheel</a></li>
+  <li><a href="#sec-Conclusion" id="toc-sec-Conclusion" class="nav-link" data-scroll-target="#sec-Conclusion">Conclusion and Future Work</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/brianmechanisms/brianmechanisms/edit/main/index.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/brianmechanisms/brianmechanisms/blob/main/index.md" class="toc-action">View source</a></p><p><a href="https://github.com/brianmechanisms/brianmechanisms/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Novel Long Range Compound Linear Motion Mechanisms For use in the Design of Affordable Agricultural Robots</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    Brian Onang’o 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Brian Mechanisms
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 15, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    <p>In all robotics applications, mechanical complexity is one of the major sources considerably increasing the cost and leading to low adoption. This paper presents the designs of 4 novel compound linear motion mechanisms with essentially unlimited range of motion for use in both fixed and mobile robots. This makes it possible to affordably scale fixed robots to commercial size farms as well as remove the complexity and related costs in mobile agricultural robots introduced by precise sensors for navigation. Three of the given mechanisms meet all the design aims required for successful adoption in agricultural robots. The second mechanism is recommended for further study.</p>
+  </div>
+</div>
+
+</header>
+
+<section id="sec-introduction" class="level2">
+<h2 class="anchored" data-anchor-id="sec-introduction">Introduction</h2>
+<p>In the search for a suitable means of producing low-cost agricultural robots (ARs) with a view to increasing their adoption in agricultural processes, especially in developing countries and thereby making feasible a completely remote commercial agricultural system, the designs have been established of long-range compound linear motion mechanisms (LMMs) of different mechanical complexity which can be used in the design of both fixed and mobile robots. A combination of both legs and non-circular wheels is used to achieve linear motion to a precision that is acceptable for agricultural work and some of the more precise mechanisms are expected to have sufficient precision for manufacturing applications. The set of LMMs consists of mechanisms designed using both rigid and flexible links, the flexible links being optionally guided by cam grooves. A compound LLMs consists of a first LMM that moves either continuously or intermittently, as the design constraints of the mechanism will allow, along another LMM which acts as the frame for he first LMM. The second LLM moves intermittently in a fashion similar to a walking mechanism along the frame of the machine. The compound LLM can act either as an “open ground” mobile walking mechanism or by the addition of a gripping mechanism act as a traditional long range LLM. This setup eliminates the need of having in cartesian fixed robot an expensive drive system that is as long as the length of displacement required along any axis, reducing the requirements for linear motion to a self-driven LLM <span class="citation" data-cites="Dooley2022">[<a href="#ref-Dooley2022" role="doc-biblioref">1</a>]</span> and a support structure for it which due to the flexibility of the LLMs can be any locally available material including timber, cables, fencing wire, concrete walls, etc that has sufficient strength for the intended application. By this means the cost of ARs requiring LMMs can be greatly reduced. It also enables a mobile robot to be controlled using the same control strategies used for fixed robots. No design we are aware of has heretofore achieved this controller simplicity. While the primary intended application of the mechanisms is in fixed cartesian robots and mobile robots in structured environments, they can also be used in cable driven robots. Many other uses for the LMMs are left to the imagination of the creative mind.</p>
+<p>ARs have become an increasingly important tool in modern farming due to their ability to improve efficiency and productivity. By automating tasks such as planting, watering, weeding, and harvesting, they can reduce the need for labor and allow farmers to focus on other aspects of their operations. They also allow for more working hours. In addition, the use of precision techniques and reduced reliance on chemical inputs can help to reduce the environmental impact of farming <span class="citation" data-cites="Pedersen2006">[<a href="#ref-Pedersen2006" role="doc-biblioref">2</a>]</span>. The big data generated by monitoring robots as well as by more experienced farmers can also be used more effectively by the ARs than by farmers. <span class="citation" data-cites="GIL2023100069">[<a href="#ref-GIL2023100069" role="doc-biblioref">3</a>]</span> ARs also improve food safety by reducing the risk of contamination during handling and processing. It has also been shown in an economic study <span class="citation" data-cites="Pedersen2006">[<a href="#ref-Pedersen2006" role="doc-biblioref">2</a>]</span> which analyzed three diﬀerent robotic weeding applications for the particular case of high-value crops that the cost of robotic applications is lower than the cost of conventional systems. It is clear that the environment, farmers, consumers as well as robotic companies all stand to benefit from wide adoption of ARs.</p>
+<p>A new area that has hardly been explored is that of remote farming systems. In some African countries, urban households own 5–35% of total agricultural land and 60% of medium-scale farmers are urban-based <span class="citation" data-cites="Jayne2016">[<a href="#ref-Jayne2016" role="doc-biblioref">4</a>]</span>. These urban-based farmers are either land owners or lease the land that they use. The process of leasing land is not an easy one, neither is the management of the remote farms. Remote farming, especially on small and medium-sized farms (SMFs) is often based on trust between the farm managers and the farmer, and losses are often incurred due to the farm manager doing substantial work on the farm without the physical presence of the farmer to supervise the work. An adoption of ARs that require little or no supervision would make remote farming far easier and more profitable by eliminating the losses incurred due to the substandard work of the farm managers.</p>
+<p>The SMFs form the larger part of the world’s agricultural land. In the European Union, these farms respectively represent 40%, 29%, and 14% of the farms, a total of 83%. <span class="citation" data-cites="GIL2023100069">[<a href="#ref-GIL2023100069" role="doc-biblioref">3</a>]</span> Likewise in Africa, 90% of farm households have between 0 and 5 hectares. <span class="citation" data-cites="Jayne2016">[<a href="#ref-Jayne2016" role="doc-biblioref">4</a>]</span> However, the adoption of ARs is skewed against these towards the resourceful large farms <span class="citation" data-cites="GIL2023100069">[<a href="#ref-GIL2023100069" role="doc-biblioref">3</a>]</span>. The main barriers to the adoption of ARs by small and medium-sized farms are the high costs of these technologies and the lack of suitable financing options. These barriers can be particularly significant for farms in developing countries, where the economic environment may be less favorable for investment in new technologies. In addition, SMFs may have limited access to the technical expertise and support needed to implement and maintain ARs. And even where service personnel may be found, there are high costs in traveling distances for these to the farms <span class="citation" data-cites="Pedersen2006">[<a href="#ref-Pedersen2006" role="doc-biblioref">2</a>]</span>.</p>
+<p>In all robotics applications, mechanical complexity is one of the major sources considerably increases the cost which results in failure <span class="citation" data-cites="RHex">[<a href="#ref-RHex" role="doc-biblioref">5</a>]</span>. It has been shown in a study that among the main cost contributors for ARs are the sensors for precision localization, or hardware for navigation <span class="citation" data-cites="GIL2023100069">[<a href="#ref-GIL2023100069" role="doc-biblioref">3</a>]</span>. It is projected by the authors of this study that hardware costs should diminish over time as new technologies and low-cost high-quality sensors hit the market. For fixed robots like Farmbot, the cost factors are a bit different. While it is possible to operate these using open-loop control and thus eliminate the need for any positioning sensors, their cost increase in proportion to their size. The long guides needed for a long range of motion are difficult and expensive to manufacture. <span class="citation" data-cites="Dooley2022">[<a href="#ref-Dooley2022" role="doc-biblioref">1</a>]</span>. In May 2020 the production of Farmbot MAX which was the largest model of the range of Farmbot Robots was put on hold pre-launch. Among the reasons given by Farmbot for this was that it was too expensive <span class="citation" data-cites="aronson_2020">[<a href="#ref-aronson_2020" role="doc-biblioref">6</a>]</span>. The significant increase in the cost of Farmbot MAX relative to the other models is due among other factors to the extra length of aluminum V-slots used for the tracks. Considering that the aluminum itself is a good candidate for the scrap metal business in developing countries, the use of such a robot in outdoor gardens where it would be vulnerable to theft is impractical.</p>
+<p>Another reason cited by Farmbot was that scaling a Farbot requires “extra engineering”. It has been noted that noted that long guides are difficult and expensive to manufacture. Further, when toothed belts are used, the elasticity and compliance in the system affects the accuracy of positioning and may cause vibration, and thus requires special techniques for motion control <span class="citation" data-cites="Hace2004">[<a href="#ref-Hace2004" role="doc-biblioref">7</a>]</span>, <span class="citation" data-cites="Hace2008">[<a href="#ref-Hace2008" role="doc-biblioref">8</a>]</span>. As a solution to mitigate both the technical and financal challenges of scaling LLMs the author proposes a compound LMM which consisting of a short LMM that is itself moved discretely along the frame of the machine.</p>
+<p>For mobile robots, a weeding robot called Tertil produced by iRobot demonstates how to eliminate navigation sensors which a robot can do without for its intended application. Tertil moves in its environment using a bump-and-go algorithm which eliminates the need for expensive localization sensors. While this algorithm has this advantage, it also has its drawbacks. Bump-and-go cannot be used for some agricultural applications such as crop establishment which require structured movement within the farm and it also requires plant guards around young plants to prevent the robot from running over them. Although Tertil, which is being sold at $349.00, is still too expensive for developing countries, it illustrates how to reduce the cost of robots by eliminating unnecessary sensors for a particular application.</p>
+<p>But to practically remove the need for navigation sensors for mobile robots, our work proposes to simulate structured, or controlled environments, outside in the open fields by diving each farm using GIS data into small farms of the same size as the workspace of the robot. Then within each farm, the robot works as a fixed robot using LMMs and control strategies of fixed robots. The robot uses a secondary set of LMMs to move from one small farm to the next. This setup describes a compound robot which is by definition a fixed robot on a mobile robot. It eliminates some of the cost factors of mobile robots as well as those of fixed robots and combines the advantages of both (summarized in <a href="#tbl-robot-advantages">Table&nbsp;1</a>) into a single compound robot. Further, the use of a single type of simple mechanism means that the robots are easily serviceable even by people with limited technical expertise. In the humble understanding of the author, the key to building affordable robots lies in the design of a compound long-range LLM. Among the designs presented are LLMs which by the simple addition of legs transform into walking mechanisms thus converting a fixed LLM into a mobile, or compound, LLM while maintaining the same control strategies used for the fixed LLM. The compound LLM is provided with a means of gripping the support structure.</p>
+<p>Linear-motion mechanisms generally consist of a load-bearing anchor or frame and a support structure (called the “guide”) that guides a portion of the mechanism (called the “carriage” or “shuttle”) in linear translation. The mechanism’s accuracy is due in no small measure to the accuracy of the guidance system. Depending on the structural material used for the fixed LLM an accuracy of up to 0.45 mm can be achieved using aluminum V-Slot Extrusion with built-in Linear Rails <span class="citation" data-cites="Chancharoen_2019">[<a href="#ref-Chancharoen_2019" role="doc-biblioref">9</a>]</span>. This makes some of the proposed designs good candidates for manufacturing applications.</p>
+<div id="tbl-robot-advantages" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Advantages of Fixed and Mobile Robots</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>Fixed Robots</th>
+<th>Mobile Robots</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Controller Simplicity</td>
+<td>Large work area</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Inexpensive components</td>
+<td>Working in unstructured environments</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="sec-design-aims" class="level2">
+<h2 class="anchored" data-anchor-id="sec-design-aims">Design Aims</h2>
+<p>The compound LMMs should behave as nearly as possible to ordinary LLMs so that the same control methods used with normal LLMs can be used for them. If the mechanims cannot have a constant velocity throughout a single cycle, then it is acceptable to have different constant velocities for different sections of the cycle so that the relationship between the overall displacement and the velocities is linear.</p>
+<p>The proposed mechanisms have the flexibility of using any type of linear motion mechanism for the first LMM which forms the fixed part of the compound LMM. In the first case, an externally powered system can be used to convert rotary motion to linear motion such as using a toothed belt, driven by a rotational motor through a pulley, to power a translational load <span class="citation" data-cites="Nevaranta2015">[<a href="#ref-Nevaranta2015" role="doc-biblioref">10</a>]</span>. Or a self-powered drive system can be used to produce the linear motion <span class="citation" data-cites="Dooley2022">[<a href="#ref-Dooley2022" role="doc-biblioref">1</a>]</span>. For the second mechanism, there are many possible designs for achieving the linear motion.</p>
+<p>The design aims (given in <a href="#tbl-design-aims">Table&nbsp;2</a>) were to achieve the most simple design which can work as a fixed LLM and with only slight modifications work as a mobile or compound LLM while maintaining the same control methods used for the fixed LLM.</p>
+<div id="tbl-design-aims" class="anchored">
+<table class="table">
+<caption>Table&nbsp;2: Design Aims</caption>
+<colgroup>
+<col style="width: 8%">
+<col style="width: 52%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Design Aim</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>The use of a single motor per axis.</td>
+<td>To reduce cost and simplicity of control.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Straight line motion (<span class="math inline">\(u_z = 0\)</span>).</td>
+<td>Energy efficiency and simplicity of gripping mechanism.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>The second intermittent motion to be controlled by the first LLM.</td>
+<td>To reduce cost and simplicity of control.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Uniform velocity of both LLMs for constant input motor speed (<span class="math inline">\(u_x = constant\)</span>).</td>
+<td>Simplicity of control.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Means of gripping for the second LLM.</td>
+<td>Accuracy of second LLM displacements.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Constant pressure angle for legs of second LLM.</td>
+<td>The legs are not placed in bending by the weight of the robot <span class="citation" data-cites="Shigley2006">[<a href="#ref-Shigley2006" role="doc-biblioref">11</a>]</span>.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Fixed gait for the second mechanism with foot placement on the ground at regular constant intervals.</td>
+<td>To allow for scalability of the robot height.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Rigid links.</td>
+<td>Structural rigidity and to provide high accuracy in positioning <span class="citation" data-cites="Dooley2022">[<a href="#ref-Dooley2022" role="doc-biblioref">1</a>]</span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When these aims were studied it became apparent that it is difficult to achieve all in a single mechanism. On the mechanisms described, only the last one achieves all of these aims. However, the other mechanisms described perform better under the benchmarks set by these aims compared to the last mechanism described. Each of the mechanisms, with their specific trade-offs, would fit better a particular application than the rest of the mechanisms.</p>
+<p>Given that the first LLM of the compound LLMs described is a standard LLM, much of the work goes into the second LLM. The following description is of a leg mechanism that can be used with as few as 4 links using rigid links and can also be used with flexible links and cam grooves to trace any desired footpath.</p>
+</section>
+<section id="sec-recirculating-legs" class="level2">
+<h2 class="anchored" data-anchor-id="sec-recirculating-legs">A Recirculating Leg Mechanism using a Parallelogram Linkage</h2>
+<section id="sec-recirculating-legs-1" class="level3">
+<h3 class="anchored" data-anchor-id="sec-recirculating-legs-1">The First Configuration</h3>
+<p>A recirculating leg mechanism has been described as one that “treats the singly actuated leg as a single-spoked rimless wheel” <span class="citation" data-cites="RHex">[<a href="#ref-RHex" role="doc-biblioref">5</a>]</span>. This means that the leg completes a rotation about some point. Some of the recirculating legs existing in the literature include rimless wheel, rimless wheel with independetly actuated spokes <span class="citation" data-cites="Laney2005">[<a href="#ref-Laney2005" role="doc-biblioref">12</a>]</span> and the compliant legs of Rhex <span class="citation" data-cites="RHex">[<a href="#ref-RHex" role="doc-biblioref">5</a>]</span>. In all of these designs, the rotation of the leg is about a single point on the leg (the axle). Recirculating have the advantage of reduced mechanical complexity by the restriction of one actuator per leg <span class="citation" data-cites="RHex">[<a href="#ref-RHex" role="doc-biblioref">5</a>]</span> and the system symmetry also allows an identical operation with the body up-side-down <span class="citation" data-cites="RHex">[<a href="#ref-RHex" role="doc-biblioref">5</a>]</span>. They however, have the disadvantage of a step length that is dependent on the leg length making the robot height to be practically limited by the leg length. The dependence of the step length on the leg length also increases control complexity when the legs are used as part of an LLM. The legs are also assumed to be massless <span class="citation" data-cites="RHex">[<a href="#ref-RHex" role="doc-biblioref">5</a>]</span>. However, if the mass of the legs is taken into account, then it is more energy efficient to recirculate the legs through a smaller radius than half the leg length, assuming the center of mass of the less is at its center. We describe a system for recirculating one or more legs using a single actuator in a more energy efficient way and in a manner in which the step length is independent of the leg length. <a href="#fig-figure3.1">Figure&nbsp;1</a> shows the loci of two points on two different types of recirculating legs.</p>
+<div id="fig-figure3.1" class="quarto-layout-panel" data-nrow="2">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-First_Class_Locus" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/Recirculating-leg-locus.png" class="img-fluid figure-img" data-ref-parent="fig-figure3.1"></p>
+<p></p><figcaption class="figure-caption">(a) First Class Locus</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-Second_Class_Locus" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/4-bar-locus.png" class="img-fluid figure-img" data-ref-parent="fig-figure3.1"></p>
+<p></p><figcaption class="figure-caption">(b) Second Class Locus</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-Second_Class_Footpath" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/foot_locus.png" class="img-fluid figure-img" data-ref-parent="fig-figure3.1"></p>
+<p></p><figcaption class="figure-caption">(c) Second Class Footpath</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-Second_Axle_path" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/4-Bar-Axlepath.png" class="img-fluid figure-img" data-ref-parent="fig-figure3.1"></p>
+<p></p><figcaption class="figure-caption">(d) Second Class Axle Path</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-Second_Axle_path" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/2-legged.png" class="img-fluid figure-img" data-ref-parent="fig-figure3.1"></p>
+<p></p><figcaption class="figure-caption">(e) 2 Legged Second Class</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-Second_Axle_path_With_Levelling" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/2-legged-with-levelling.png" class="img-fluid figure-img" data-ref-parent="fig-figure3.1"></p>
+<p></p><figcaption class="figure-caption">(f) 2 Legged Second Class With Levelling</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Recirculating Leg</figcaption><p></p>
+</figure>
+</div>
+<p>The 2 loci in <a href="#fig-Second_Class_Locus">Figure&nbsp;1 (b)</a> are generated by two points on the coupler of a 4-bar linkage with the Grashof condition <span class="math inline">\(s + l = p + q\)</span> and with equal links opposite each other which is called a parallelogram linkage. The coupler acts as the leg for the parallelogram mechanism. The radius $R_{AB} is the crank length $Traditionally the 4-bar linkage is one of the least candidates for synthesizing a walking mechanism. This is because while several closed curves can be generated by a point on the coupler of a four-bar linkage of <span class="math inline">\(s+l &lt; p+q\)</span> which may appropriately represent the footpath of a walking mechanism <span class="citation" data-cites="Shigley2006">[<a href="#ref-Shigley2006" role="doc-biblioref">11</a>]</span>, all points on the coupler of the parallelogram linkage trace a circular path. With this locus as the footpath, the stride would be infinitely small <span class="citation" data-cites="Shigley2006">[<a href="#ref-Shigley2006" role="doc-biblioref">11</a>]</span>. Further, parallelogram mechanisms suffer from the singularity condition which occurs twice in the cycle when the links are collinear.</p>
+<p>Using the axle path shown in <a href="#fig-Second_Class_Footpath">Figure&nbsp;1 (c)</a> as opposed to a straight line mitigates the the problem of an infinitely small stride. The radius of the axle path arc is equal to the crank length <span class="math inline">\(R_{AB}\)</span>. The arc begins at the point at which the foot contacts the ground and ends at the point at which the foot loses contact with the ground. As such it is not a constant arc. The footpath, the stride length and therefore the duty factor (the ratio of the part of the walking cycle during which the leg makes contact with the ground) are also not constant. For an anterior extreme position angle <span class="math inline">\(\theta_{AEP}\)</span> and posterior extreme position angle <span class="math inline">\(\theta_{PEP}\)</span>, the stride length can be simplified to: <span class="math display">\[L_{stride}=|R_{AB}(Cos(\theta_{PEP})-Cos(\theta_{AEP}))|\]</span></p>
+<p>The elimination of the change point condition introduces further complications into the design for a 4-bar parallelogram mechanism with a single leg. But it becomes a trivial matter if more couplers (legs) are added. An arrangement can then be achived in which there is no point at which all the links are collinear. <a href="#fig-Second_Axle_path">Figure&nbsp;1 (e)</a> shows an arrangement having 5 links with two of the links acting as legs.</p>
+<p>The velocity being <span class="math inline">\(v_x=R_{AB}\omega_{crank} Cos(\theta)\)</span> is not constant. Thus this design violates design aims 4 and 2. It is, however, possible to achieve a straight line of motion by the addition of at least two more links for a system with two legs. <a href="#fig-Second_Axle_path_With_Levelling">Figure&nbsp;1 (f)</a> shows a 2 legged walking mechanism with a height leveling mechanism having 3 links. The purpose of the third link is to control the height of the robot by connecting the pin joint between the other two links at the desired height on the third link. Using this configuration, reducing the robot height below the axle connecting the upper crank to the legs requires a corresponding increase in leg length from the minimum.</p>
+<p>For the configuration in <a href="#fig-Second_Axle_path_With_Levelling">Figure&nbsp;1 (f)</a> <span class="math inline">\(\theta_i\)</span> is the input and the position of L is the output. During the protraction of the leg FE, when the leg BC is on the ground, BC is the fixed link.</p>
+<p>Coordinates of C: <span class="math inline">\((0,0)\)</span></p>
+<p>When both legs are on a flat ground, <span class="math inline">\(\theta_{i0} = (180 - \theta_{CDE})/2\)</span></p>
+<p>Coordinate of D: <span class="math inline">\((R_{AB} Cos(2\theta_{i0} - \theta_{i}), R_{AB} Sin(2\theta_{i0} - \theta_{i}))\)</span></p>
+<p>Coordinate of E: <span class="math inline">\((R_{AB} (Cos(2\theta_{i0} - \theta_{i}) - Cos(- \theta_{i})), R_{AB} (Sin(2\theta_{i0} - \theta_{i})+ Sin(\theta_{i})))\)</span></p>
+<p>Length <span class="math inline">\(L_{CH}=R_{AB} Sin(90-\theta_{CDE}/2)\)</span></p>
+<p>Length <span class="math inline">\(L_{IK}=R_{AB} Sin(90-\theta_{CDE}/2)\)</span></p>
+<p>Angle of link CE, <span class="math inline">\(\theta_{2} = Sin^{-1}(\frac{(Sin(2\theta_{i0} - \theta_{i})+ Sin(\theta_{i}))}{Sin(90-\frac{\theta_{CDE}}{2})})\)</span></p>
+<p>Coordinates of H: <span class="math inline">\((R_{AB} Sin(90-\theta_{CDE}/2) Cos(Sin^{-1}(\frac{(Sin(2\theta_{i0} - \theta_{i})+ Sin(\theta_{i}))}{Sin(90-\frac{\theta_{CDE}}{2})})), R_{AB} Sin(90-\theta_{CDE}/2)(\frac{(Sin(2\theta_{i0} - \theta_{i})+ Sin(\theta_{i}))}{Sin(90-\frac{\theta_{CDE}}{2})}))\)</span></p>
+<p>For simplicity, since <span class="math inline">\(L_{CH}=L_{HE}\)</span>, <span class="math inline">\(L_{CH}=L_{IK}\)</span>, and <span class="math inline">\(z_{G} = z_{H}\)</span> then since <span class="math inline">\(z_{C} = constant\)</span>, it follows that</p>
+<p><span class="math display">\[u_z = 0\]</span></p>
+<p>Thus design aim 2 is fulfilled. Velocity analysis of this configuration is beyond the scope of this work. By the use of an LLM anchored at point L to drive the legs, constant velocity is obtained. Design aim 1 can also be achieved for example if a single leg is used to drive an axis of the machine. However, different designs will fit different applications, and designing to meet this aim may introduce mechanical complexities which may outdo the gains.</p>
+</section>
+<section id="sec-parallelogram-straight-line-motion" class="level3">
+<h3 class="anchored" data-anchor-id="sec-parallelogram-straight-line-motion">Parallelgram Straight Line Motion</h3>
+<p>The design of <a href="#fig-Second_Axle_path_With_Levelling">Figure&nbsp;1 (f)</a> works only in theory since with the additional 3 links it is not possible to position all the links in space so as to have no link impeded by any other link during the rotation of the cranks. The following is the description of a cam profile for use in achieving straight line motion (the cam has straight line motion supported by the legs). Either of two gaits can be achived. The first having continuous motion of the legs in which when one leg is in protraction the other is in retraction. The second gait has dwell periods when both of the legs are on the ground with none moving relative to the other.</p>
+<p>There are two radii: <span class="math inline">\(R_{AB}\)</span> as half the distance between the two legs and <span class="math inline">\(r_d\)</span> the dwell offset radius. <span class="math inline">\(r_d=r_fR\)</span> with <span class="math inline">\(r_f ∈ [0,1]\)</span>. The cam profile is a parametric curve (illustrated in <a href="#fig-parallelogram-cam">Figure&nbsp;2</a>) of: <span class="math display">\[x_{(t)}=t+(R_{AB}+r_d) Cos(\frac{t}{2 r_d}* Pi)\]</span> <span class="math display">\[y_{(t)}=(R_{AB}+r_d) Sin(\frac{t}{2 r_d}* Pi)\]</span></p>
+<div id="fig-parallelogram-cam" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/Num_3CAM.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Parallelogram mechanism straight line cam</figcaption><p></p>
+</figure>
+</div>
+<p>A simpler option for achieving straight line motion for a parallelogram is using the cam profile described in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;6</a> which allows straight line motion by changing the mechanism’s gait from continuous walking to intermittent walking.</p>
+<p>Either of two configurations is required to practically build a system with multiple legs driven by a single actuator and sharing the same cranks. The first configuration has been described having the fixed link (AD) in the midplane between the plane having coupler BC and coupler FE. This first configuration works for a system with two legs.</p>
+</section>
+<section id="sec-recirculating-legs-2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-recirculating-legs-2">The Second Configuration</h3>
+<p>To build a system with more than 2 legs requires that the two cranks (<span class="math inline">\(ABF\)</span> and <span class="math inline">\(CDE\)</span>) be placed in different planes on opposite sides of the couplers (<span class="math inline">\(CB\)</span> and <span class="math inline">\(EF\)</span>) which are in the midplane. The fixed link is joined to the two couplers from planes further away from the midplane. <a href="#fig-Leg">Figure&nbsp;3</a> illustrates this setup. This way it is possible for the legs to recirculate from the power stroke to the return stroke and back to the power stroke without being impeded by any other link.</p>
+<div id="fig-Leg" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/redacted.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Class 2 Recirculating Leg</figcaption><p></p>
+</figure>
+</div>
+<p>To prevent the coupler from pivoting about any point, at least one of the following two conditions must also be met: <span class="math display">\[xA != xD\]</span> <span class="math display">\[zA != zD\]</span></p>
+<p>The following condition must also be met for the legs to recirculate: <span class="math inline">\(L_{AD} &lt;= R_{AB}\)</span></p>
+<p>This setup achieves design aims 1, 6, 7, and 8. It is also possible with a few modifications to achieve aim 5. However, it fails to achieve aims 2, 3, and 4. With this set up the legs are recirculating and there is a point at which two legs are collinear. Since the couplers are all in the same plane, it follows that the lowest point of the upper coupler must be higher than the highest point of the lower coupler when they are collinear. For a crank length <span class="math inline">\(R_{AB}\)</span> and N couplers, the angle <span class="math inline">\(\theta_c\)</span> between any two couplers, if they are uniformly spaced, is <span class="math inline">\(\theta_c = 360/N\)</span>°. In the simplest case with coupler thickness <span class="math inline">\(T_c \to 0\)</span>, the maximum coupler height,</p>
+<p><span class="math display">\[H_c = 2R_{AB}Sin(\theta_C/2)\]</span></p>
+<p>The loci of the pin joints connecting the coupler to the two cranks are circular paths. However this setup can be used with any other desired path generated by any other mechanism or by cam grooves as long as the conditions for the positions of the paths, leg, and pin joints are met. The result is a walking mechanism with any number of legs all driven by a single motor with the foot tracing any arbitrary locus and fulfilling the design aims 1,6, 7 and 8. while modifying the path requires more complex mechanisms beyond the scope of this work unless flexible links and cam grooves (as described in <a href="#sec-flexible-links">Section&nbsp;5</a>) are are used or non circular wheels (given in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;6</a>), it makes it easier to achieve the remaining design aims 2, 3, and 4.</p>
+<p>Since the coupler height (or leg length) is limited by the crank length <span class="math inline">\(R_{AB}\)</span>, it follows that the maximum robot height that can be achieved using this set-up is practically limited by the crank length. And although the crank length can theoretically be increased without limit, this action worsens how much the synthesized mechanism misses design aim 3 making it much less practical. To overcome these limitations, the design of a hollow leg for use with the parallelogram linkage is described.</p>
+</section>
+<section id="sec-recirculating-legs-hollow" class="level3">
+<h3 class="anchored" data-anchor-id="sec-recirculating-legs-hollow">A Hollow Leg for a Recirculating Leg System</h3>
+<p>This design allows the use of longer legs that descibed in <a href="#sec-recirculating-legs-2">Section&nbsp;3.3</a> by allowing the upper legs to pass “within” the lower legs when any two legs become collinear. <a href="#fig-figure3.3">Figure&nbsp;4</a> shows the design of such a leg. The principle applied here is that which allows glasses or any other tubular structure to be stacked inside each other. For two hollow objects to be stacked inside each other if their shapes are symmetrical about the central vertical plane, it is required that the distance <span class="math inline">\(d_x(z)\)</span> between any two similar points on each side of the plane increase with height z. If the sole of the leg is flat, then this condition is not fulfilled at the sole and this increases the minimum height at which one leg can pass through another. In the simplest case where <span class="math inline">\(T_c \to 0\)</span>, the minimum height required for one leg to pass through another is found by solving the following equation. of any length while maintaining constant the height of vertical payload displacement. <span class="math display">\[d_x(z_0) = L_{sole}\]</span></p>
+<div id="fig-figure3.3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/redacted.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Hollow Legged System</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-rimless-wheel" class="level2">
+<h2 class="anchored" data-anchor-id="sec-rimless-wheel">Rimless Wheel with Constant Pressure Angle</h2>
+<p>The rimless wheel, as the name suggests, is a wheel without the rim and was first mentioned as a model of walking by Margaria <span class="citation" data-cites="Edwards1978">[<a href="#ref-Edwards1978" role="doc-biblioref">13</a>]</span>. For practical applications, the rimless wheel has several advantages. For instance, the stable region for a rimless wheel is very large <span class="citation" data-cites="Wisse2005">[<a href="#ref-Wisse2005" role="doc-biblioref">14</a>]</span>. However, this also introduces several challenges that limit its practical application. An example is that the step length is a function of the leg length (or robot height). <span class="citation" data-cites="Laney2005">[<a href="#ref-Laney2005" role="doc-biblioref">12</a>]</span> For rimless wheels with independently actuated spokes the ability of a robot to adjust its height, and thereby adjust its step length, allowing it to move in a manner best suited to fit the situation is an advantage. However, for a passive rimless wheel, the relationship between the robot height and the step length is a disadvantage as with the leg described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> since it limits the practical maximum height of the robot. Further, the introduction of more degrees of freedom into a rimless wheel by the introduction of independently actuated spokes increases the complexity of control as well as the cost of the robot.</p>
+<p><a href="#fig-figure4.1">Figure&nbsp;5</a> illustrates a rimless wheel having a constant pressure angle. it achieves design aims 1, 6, 7, and 8 and fails on 3 and 4. It is possible with a few modifications to achieve aim 5. Design aim 2 (straight line motion) can also be achieved by the use of a cam groove on the wheel (described in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;6</a>). This mechanism is synthesized using the leg described in <a href="#sec-recirculating-legs">Section&nbsp;3</a>. For a given crank length <span class="math inline">\(R_{AB}\)</span>, the amplitude of the arc traced by the axle remains constant and independent of the leg length. The step length is also constant. Theoretically then the robot’s height is not limited by the leg length. <a href="#fig-rimlesswheelequivalent">Figure&nbsp;5 (c)</a> shows a kinematic equivalent of this mechanism using a normal rimless wheel. Kinematic analysis of this wheel is beyond the scope this this work.</p>
+<div id="fig-figure4.1" class="quarto-layout-panel" data-nrow="2">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-solid-legs" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/redacted.png" class="img-fluid figure-img" data-ref-parent="fig-figure4.1"></p>
+<p></p><figcaption class="figure-caption">(a) With solid legs</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-hollow-legs" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/redacted.png" class="img-fluid figure-img" data-ref-parent="fig-figure4.1"></p>
+<p></p><figcaption class="figure-caption">(b) With hollow legs</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-rimlesswheelequivalent" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/rimlesswheelequivalent.png" class="img-fluid figure-img" data-ref-parent="fig-figure4.1"></p>
+<p></p><figcaption class="figure-caption">(c) Rimless wheel equivalent</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Class 2 Rimless Wheel</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="sec-flexible-links" class="level2">
+<h2 class="anchored" data-anchor-id="sec-flexible-links">Flexible Links and Cam Grooves</h2>
+<p>Using flexible links there is no limit to the number of mechanism that can be synthesized. As such the work of this section is limited to describing the work of the flexible links. The two configurations described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> are also used here. <a href="#fig-Flexible-Link-Concept">Figure&nbsp;6 (a)</a> illustrates a concept for a class 1 legged LLM using a chain. The legs are connected to the chains. <a href="#fig-Flexible-Link-Implementation-1">Figure&nbsp;6 (b)</a> and <a href="#fig-Flexible-Link-Implementation-2-a">Figure&nbsp;6 (c)</a> are practical implementations of the concept.</p>
+<div id="fig-figure6.1" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-Flexible-Link-Concept" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/Flexible-Link-Concept.png" class="img-fluid figure-img" data-ref-parent="fig-figure6.1"></p>
+<p></p><figcaption class="figure-caption">(a) Class 1 Concept</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-Flexible-Link-Implementation-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/Flexible-Link-Implementation-1.png" class="img-fluid figure-img" data-ref-parent="fig-figure6.1"></p>
+<p></p><figcaption class="figure-caption">(b) V-legs</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-Flexible-Link-Implementation-2-a" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/Flexible-Link-Implementation-2-a.png" class="img-fluid figure-img" data-ref-parent="fig-figure6.1"></p>
+<p></p><figcaption class="figure-caption">(c) Grooved Track</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-Class-1-Mechanism-Path" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/Class-1-Mechanism-Path.png" class="img-fluid figure-img" data-ref-parent="fig-figure6.1"></p>
+<p></p><figcaption class="figure-caption">(d) Leg Path</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6: Class One LLM using Flexible Links</figcaption><p></p>
+</figure>
+</div>
+<p>The design of <a href="#fig-Flexible-Link-Implementation-2-a">Figure&nbsp;6 (c)</a> has the advantage that it has grooves which completely elimites slip in the x direction. The grooves are formed by arcs with an empirical center angle of 22.5° with a radius of R both obtained using the foot path given in <a href="#fig-Class-1-Mechanism-Path">Figure&nbsp;6 (d)</a>. The radius of the sprocket at the lower corners is also R. The length of the leg measured from the center of the sprocket axle must be <span class="math inline">\(2R\)</span> for the legs to mate with the grooves.</p>
+<p>The legs of this mechanism slide inside the grooves of the rail making it require a lot of lubrication. Further, for legged class 1 compound LLMs the legs can only establish point of line contact with a flat ground and it is not possible to use grooved rails with legs longer than <span class="math inline">\(2R\)</span>. Class 2 mechanisms offer advantages over this class of mechanisms.</p>
+<div id="fig-figure6.2" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-Flexible-Link-Class-2-a" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/redacted.png" class="img-fluid figure-img" data-ref-parent="fig-figure6.2"></p>
+<p></p><figcaption class="figure-caption">(a) With Loci</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-Flexible-legged-class-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/redacted.png" class="img-fluid figure-img" data-ref-parent="fig-figure6.2"></p>
+<p></p><figcaption class="figure-caption">(b) Designed</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7: Class Two LLM using Flexible Links</figcaption><p></p>
+</figure>
+</div>
+<p>Class two LLMs using flexible links are designed using legs as described in <a href="#sec-recirculating-legs">Section&nbsp;3</a>. <a href="#fig-figure6.2">Figure&nbsp;7</a> illustrates this mechanism.</p>
+</section>
+<section id="sec-universal-linear-motion-wheel" class="level2">
+<h2 class="anchored" data-anchor-id="sec-universal-linear-motion-wheel">Universal Linear Motion Wheel</h2>
+<p>The following is a description of a mechanism that meets all the design aims and is used by both the mechanisms described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> and <a href="#sec-rimless-wheel">Section&nbsp;4</a> to achieve straight line motion and is therefore the mechanism of greatest import and interest. It is based on the design of a wheel modified to have intermittent motion.</p>
+<p>A wheel has the advantage of straight line motion, higher speed and greater stability on relatively flat ground. A design has been implemented of a bycycle with a wheel split into several parts <span class="citation" data-cites="conradie_2022">[<a href="#ref-conradie_2022" role="doc-biblioref">15</a>]</span>. By rotating all the different parts together they contact the ground at different periods and act together as a single wheel. However, there is still theoretically a line contact between the compound wheel and the ground at any instant and therefore no advantage over a normal wheel in terms of tractions. The use of tracks distributes weight evenly over a larger surface area, providing better traction on soft or uneven surfaces.</p>
+<p>DESCRIPTION REDACTED. Contact author for full access.</p>
+</section>
+<section id="sec-Conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="sec-Conclusion">Conclusion and Future Work</h2>
+<p>This paper presents four novel types of compound linear motion mechanisms for increasing the range of linear motion for use in the design of affordable fixed and mobile robots. Mobile robots are treated as 2 DOF linear motion mechanisms moving on flat ground. Mechanism 4 meets all the design aims, offers the greatest mechanical simplicity and is used by both mechanisms 1 and 2. It is therefore the mechanism of greatest interest. Mechanism 3 does no meet design aim 8. Mechanism 4 only achieves intermitted motion when used as a walking mechanism which mechanism 3 has continuous motion. However, it is easier and simpler to build robots that turn without slip using mechanism 4 than mechanism 3. For constrained LLM, rope climbing and cable robots, mechanism 4 offers a better alternative than mechanism 3 due to its larger surface area for clamping.</p>
+<p>Future work will focus on exploring the performance of built prototypes of mechanism 4 against existing types of LLMs, especially the stiffness provided by the clamping mechanisms as well as the precision of the unconstrained mechanism. The performance of mobile robots built using these mechanisms in both structured and unstructured environments will also be studied.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Dooley2022" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">M. Dooley, X. Shen, A novel self-actuated linear drive for long-range-of-motion electromechanical systems, Actuators. 11 (2022) 250. https://doi.org/<a href="https://doi.org/10.3390/act11090250">10.3390/act11090250</a>.</div>
+</div>
+<div id="ref-Pedersen2006" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">S.M. Pedersen, S. Fountas, H. Have, S. Blackmore, Agricultural robots—system analysis and economic feasibility, Precision Agriculture. 7 (2006) 295–308. https://doi.org/<a href="https://doi.org/10.1007/s11119-006-9014-9">10.1007/s11119-006-9014-9</a>.</div>
+</div>
+<div id="ref-GIL2023100069" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">G. Gil, D.E. Casagrande, L.P. Cortés, R. Verschae, Why the low adoption of robotics in the farms? Challenges for the establishment of commercial agricultural robots, Smart Agricultural Technology. 3 (2023) 100069. https://doi.org/<a href="https://doi.org/10.1016/j.atech.2022.100069">https://doi.org/10.1016/j.atech.2022.100069</a>.</div>
+</div>
+<div id="ref-Jayne2016" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">T.S. Jayne, J. Chamberlin, L. Traub, N. Sitko, M. Muyanga, F.K. Yeboah, W. Anseeuw, A. Chapoto, A. Wineman, C. Nkonde, R. Kachule, Africa’s changing farm size distribution patterns: The rise of medium-scale farms, Agricultural Economics. 47 (2016) 197–214. https://doi.org/<a href="https://doi.org/10.1111/agec.12308">https://doi.org/10.1111/agec.12308</a>.</div>
+</div>
+<div id="ref-RHex" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">U. Saranli, M. Buehler, D.E. Koditschek, RHex: A simple and highly mobile hexapod robot, The International Journal of Robotics Research. 20 (2001) 616–631. https://doi.org/<a href="https://doi.org/10.1177/02783640122067570">10.1177/02783640122067570</a>.</div>
+</div>
+<div id="ref-aronson_2020" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">R. Aronson, Putting farmbot genesis max and express max on hold, FarmBot. (2020). <a href="https://farm.bot/blogs/news/putting-farmbot-genesis-max-and-express-max-on-hold">https://farm.bot/blogs/news/putting-farmbot-genesis-max-and-express-max-on-hold</a>.</div>
+</div>
+<div id="ref-Hace2004" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">A. Hace, A. Sabanovic, A new robust position control algorithm for a linear belt-drive, in: 2004: pp. 358–363. https://doi.org/<a href="https://doi.org/10.1109/ICMECH.2004.1364465">10.1109/ICMECH.2004.1364465</a>.</div>
+</div>
+<div id="ref-Hace2008" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">A. Hace, A. Sabanovic, SMC with disturbance observer for a linear belt-drive, Industrial Electronics, IEEE Transactions On. 54 (2008) 3402–3412. https://doi.org/<a href="https://doi.org/10.1109/TIE.2007.906130">10.1109/TIE.2007.906130</a>.</div>
+</div>
+<div id="ref-Chancharoen_2019" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">R. Chancharoen, P. Veerakiatikit, L. Kriathkungwalkai, P. Daraseneeyakul, T. Loetchaipitak, M. Prayongrat, An accuracy and repeatability of a robot made with v-slot extrusion with built-in linear rails, IOP Conference Series: Materials Science and Engineering. 635 (2019) 012025. https://doi.org/<a href="https://doi.org/10.1088/1757-899X/635/1/012025">10.1088/1757-899X/635/1/012025</a>.</div>
+</div>
+<div id="ref-Nevaranta2015" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">N. Nevaranta, J. Parkkinen, T. Lindh, M. Niemelä, O. Pyrhonen, J. Pyrhönen, Online estimation of linear tooth belt drive system parameters, IEEE Transactions on Industrial Electronics. 62 (2015). https://doi.org/<a href="https://doi.org/10.1109/TIE.2015.2432103">10.1109/TIE.2015.2432103</a>.</div>
+</div>
+<div id="ref-Shigley2006" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">J. Shigley, The mechanics of walking vehicles : A feasibility study : Final report, (2006).</div>
+</div>
+<div id="ref-Laney2005" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline">D. Laney, D. Hong, <span class="nocase">Kinematic Analysis of a Novel Rimless Wheel With Independently Actuated Spokes</span>, 2005. https://doi.org/<a href="https://doi.org/10.1115/DETC2005-84596">10.1115/DETC2005-84596</a>.</div>
+</div>
+<div id="ref-Edwards1978" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline">R.H.T. Edwards, Biomechanics and energetics of muscular exercise. By rodolfo margaria, illus, clarendon press, oxford, england, 1976. $15.75, Muscle &amp; Nerve. 1 (1978) 172–172. https://doi.org/<a href="https://doi.org/10.1002/mus.880010213">https://doi.org/10.1002/mus.880010213</a>.</div>
+</div>
+<div id="ref-Wisse2005" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[14] </div><div class="csl-right-inline">M. Wisse, A. Schwab, R. Linde, F. van der Helm, How to keep from falling forward: Elementary swing leg action for passive dynamic walkers, Robotics, IEEE Transactions On. 21 (2005) 393–401. https://doi.org/<a href="https://doi.org/10.1109/TRO.2004.838030">10.1109/TRO.2004.838030</a>.</div>
+</div>
+<div id="ref-conradie_2022" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[15] </div><div class="csl-right-inline">D. Conradie, Trippy bicycle uses multiple partial wheels, Hackaday. (2022). <a href="https://hackaday.com/2022/07/31/trippy-bicycle-uses-multiple-partial-wheels">https://hackaday.com/2022/07/31/trippy-bicycle-uses-multiple-partial-wheels</a>.</div>
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© Brian Mechanisms</div>   
+  </div>
+</footer>
+
+
+
+</body></html>
